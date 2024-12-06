@@ -1,20 +1,21 @@
-const mysql = require("mysql2")
+const mysql = require("mysql2");
+
+const nameDb = "restaurantdb";
 
 const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "usuarios",
-
-})
+    database: nameDb
+});
 
 connection.connect((err) => {
-    if(err){
-        console.error("Error de conexão: " + err.stack);
+    if (err) {
+        console.error("Erro ao conectar ao banco de dados:", err);
         return;
-    } else{
-        console.log("Conectado ao banco de dados!");
     }
+    console.log(`Conectado ao banco de dados '${nameDb}' com sucesso!`);
 })
+
 
 module.exports = connection;
