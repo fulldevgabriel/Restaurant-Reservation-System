@@ -1,4 +1,6 @@
-# Sistema de Autenticação com Cadastro, Login e Consulta de Usuários
+<h1 align="center">
+Sistema de Autenticação com Cadastro, Login e Consulta de Usuários
+</h1>
 
 Este projeto implementa um sistema básico de autenticação de usuários com rotas de **cadastro**, **login** e **consulta**. Ele utiliza **JWT (JSON Web Token)** para autenticação e **bcrypt** para hash de senhas. A aplicação foi construída com **Node.js** e **Express.js**, conectada a um banco de dados MySQL.
 
